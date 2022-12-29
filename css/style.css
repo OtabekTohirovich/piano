@@ -1,0 +1,69 @@
+html {
+    text-align: center;
+}
+
+.keys {
+    display: block;
+    width: 100%;
+    height: 350px;
+    max-width: 880px;
+    position: relative;
+    cursor: none;
+    user-select: none;
+    border-radius: 5px;
+    margin: 70px auto 0;
+
+
+}
+
+.key {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 0;
+    transition: all .07s ease;
+    display: block;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.key:not(.sharp) {
+    float: left;
+    width: 10%;
+    height: 85%;
+    font-size: 18px;
+    background: rgba(255, 255, 255, .8);
+}
+.key.sharp {
+    position: absolute;
+    width: 6%;
+    height: 50%;
+    top: 0;
+    font-size: 20px;
+    padding-top: 80px;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #eee;
+    z-index: 3;
+}
+
+.key[data-key="83"] {
+    left: 7%;
+}
+.key[data-key="70"] {
+    left: 17%;
+}
+.key[data-key="72"] {
+    left: 37%;
+}
+.key[data-key="75"] {
+    left: 47%;
+}
+
+.playing {
+    transform: scale(.95);
+    border-color: #1f98ee;
+    box-shadow: 0 0 1rem #1f98ee;
+}
+
+
+
