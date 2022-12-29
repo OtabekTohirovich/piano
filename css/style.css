@@ -4,15 +4,13 @@ html {
 
 .keys {
     display: block;
-    width: 100%;
-    height: 350px;
-    max-width: 880px;
+    width: 40%;
+    height: 450px;
     position: relative;
     cursor: none;
     user-select: none;
     border-radius: 5px;
-    margin: 70px auto 0;
-
+    margin: auto;
 
 }
 
@@ -28,15 +26,15 @@ html {
 
 .key:not(.sharp) {
     float: left;
-    width: 10%;
+    width: 15%;
     height: 85%;
     font-size: 18px;
     background: rgba(255, 255, 255, .8);
 }
 .key.sharp {
     position: absolute;
-    width: 6%;
-    height: 50%;
+    width: 10%;
+    height:60%;
     top: 0;
     font-size: 20px;
     padding-top: 80px;
@@ -47,16 +45,16 @@ html {
 }
 
 .key[data-key="83"] {
-    left: 7%;
+    left: 10%;
 }
 .key[data-key="70"] {
-    left: 17%;
+    left: 25%;
 }
 .key[data-key="72"] {
-    left: 37%;
+    left: 40%;
 }
 .key[data-key="75"] {
-    left: 47%;
+    left: 55%;
 }
 
 .playing {
